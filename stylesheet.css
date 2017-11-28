@@ -1,0 +1,107 @@
+html{
+	position: relative;
+	min-height: 100%;
+}
+body {
+	margin:0;
+	padding:0;
+	background:url(img/wallpaper.jpg);
+	color:white;
+	font-size: 14px;
+	font-family: tahoma, times, arial, sans-serif;
+}
+.container{
+	max-width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+/*Header*/
+#header{
+	height: 500px;
+	background:url(img/header.jpg)no-repeat center center;
+	background-size: cover;
+	width: 100%;	
+}
+#header h1{
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	top: 400px;
+	font-size: 3.5em;
+}
+#nav{
+	background-color:#000000;
+	height: 50px;
+	width: 100%;
+}
+
+#nav ul{
+	list-style: none;
+	text-align: center;
+	height: 50px;
+	margin: 0 auto;
+	padding:0;
+}
+
+#nav ul li{
+	display: inline-block;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	padding: 0 10px;
+	
+}
+
+#nav ul li a{
+	text-decoration: none;
+	font-size: 1.2em;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #ffffff;
+	height: 50px;
+	line-height:50px;
+	padding: 0 10px
+}
+#nav ul li a:hover{
+	color:black;
+	background-color: #E5A448;
+	padding:12px 10px;
+	}
+#nav ul li a:visited{
+	color: white;
+}
+/*Main*/
+.main{
+	margin-bottom: 130px; 
+}
+
+.game{
+	height: 300px;
+	width: 300px;
+}
+.middle{
+	/*align the rule.html*/
+	text-align: center;
+	color:#E5A448;
+	text-transform: uppercase;
+}	
+td {
+	height:30px;
+	width: 30px;
+}
+
+.footer { 
+	bottom: 0;
+	width: 100%;
+	background: #000;
+	color:#ffffff;
+	height: 80px;
+}
+.footer p{
+	text-align: center;
+}
+.footer p a{
+	color: #ffffff;
+	text-decoration: none;
+	text-align: center;
+}

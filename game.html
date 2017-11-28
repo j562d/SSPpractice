@@ -1,0 +1,391 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset= "utf-8"/>
+		<meta name= "description" content="Learn lessons on how to play Gomoku." />
+		<meta http-equiv= "author" content="Jason Te"/>
+		<meta http-equiv= "content-language" content="en-us" />
+		
+		<title>Gomoku Board Game</title>
+	    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+	    <link rel="stylesheet" type="text/css" href="game.css">
+	</head>
+
+	<body>
+		<!--Header-->
+		<div id="header">
+			<div class="container">
+				<h1>Gomoku</h1>
+			</div>
+		</div>
+		
+		<!-- navigation -->
+		<div id="nav">
+			<div class="container">
+				<ul>
+					<li>
+					<a href="index.html">Home</a>
+					</li>
+					<li>
+					<a href="rules.html">Rules</a>
+					</li>
+					<li>
+					<a href="game.html" onclick= "function twoPlayerRequired()" id= "playButton" >Play</a>
+					</li>
+			</ul>
+			</div>
+		</div>
+
+		<!-- Game -->
+		<div id="playgame">
+			<div class="container">
+			<table>
+					<tr>
+						<th colspan="19">
+						<h3>Gomoku<h3>
+						</th>
+					</tr>
+					<tr><!--row 1-->
+						<td id= "1one"></td>
+						<td id= "1two"></td>
+						<td id= "1three"></td>
+						<td id= "1four"></td>
+						<td id= "1five"></td>
+						<td id= "1six"></td>
+						<td id= "1seven"></td>
+						<td id= "1eight"></td>
+						<td id= "1nine"></td>
+						<td id= "1ten"></td>
+						<td id= "1eleven"></td>
+						<td id= "1twelve"></td>
+						<td id= "1thirteen"></td>
+						<td id= "1fourteen"></td>
+						<td id= "1fifteen"></td>
+						<td id= "1sixteen"></td>
+						<td id= "1seventeen"></td>
+						<td id= "1eighteen"></td>
+						<td id= "1nineteen"></td>
+					</tr>
+
+					<tr><!--row 2 -->
+						<td id= "one"></td>
+						<td id= "two"></td>
+						<td id= "three"></td>
+						<td id= "four"></td>
+						<td id= "five"></td>
+						<td id= "six"></td>
+						<td id= "seven"></td>
+						<td id= "eight"></td>
+						<td id= "nine"></td>
+						<td id= "ten"></td>
+						<td id= "eleven"></td>
+						<td id= "twelve"></td>
+						<td id= "thirteen"></td>
+						<td id= "fourteen"></td>
+						<td id= "fifteen"></td>
+						<td id= "sixteen"></td>
+						<td id= "seventeen"></td>
+						<td id= "eighteen"></td>
+						<td id= "nineteen"></td>
+					</tr>
+
+					<tr><!--row 3 -->
+						<td id= "one"></td>
+						<td id= "two"></td>
+						<td id= "three"></td>
+						<td id= "four"></td>
+						<td id= "five"></td>
+						<td id= "six"></td>
+						<td id= "seven"></td>
+						<td id= "eight"></td>
+						<td id= "nine"></td>
+						<td id= "ten"></td>
+						<td id= "eleven"></td>
+						<td id= "twelve"></td>
+						<td id= "thirteen"></td>
+						<td id= "fourteen"></td>
+						<td id= "fifteen"></td>
+						<td id= "sixteen"></td>
+						<td id= "seventeen"></td>
+						<td id= "eighteen"></td>
+						<td id= "nineteen"></td>
+					</tr>
+
+					<tr><!--row 4 -->
+						<td id= "one"></td>
+						<td id= "two"></td>
+						<td id= "three"></td>
+						<td id= "four"></td>
+						<td id= "five"></td>
+						<td id= "six"></td>
+						<td id= "seven"></td>
+						<td id= "eight"></td>
+						<td id= "nine"></td>
+						<td id= "ten"></td>
+						<td id= "eleven"></td>
+						<td id= "twelve"></td>
+						<td id= "thirteen"></td>
+						<td id= "fourteen"></td>
+						<td id= "fifteen"></td>
+						<td id= "sixteen"></td>
+						<td id= "seventeen"></td>
+						<td id= "eighteen"></td>
+						<td id= "nineteen"></td>
+					</tr>
+
+					<tr><!--row 5 -->
+						<td id= "one"></td>
+						<td id= "two"></td>
+						<td id= "three"></td>
+						<td id= "four"></td>
+						<td id= "five"></td>
+						<td id= "six"></td>
+						<td id= "seven"></td>
+						<td id= "eight"></td>
+						<td id= "nine"></td>
+						<td id= "ten"></td>
+						<td id= "eleven"></td>
+						<td id= "twelve"></td>
+						<td id= "thirteen"></td>
+						<td id= "fourteen"></td>
+						<td id= "fifteen"></td>
+						<td id= "sixteen"></td>
+						<td id= "seventeen"></td>
+						<td id= "eighteen"></td>
+						<td id= "nineteen"></td>
+					</tr>
+
+					<tr><!--row 6 -->
+						<td id= "one"></td>
+						<td id= "two"></td>
+						<td id= "three"></td>
+						<td id= "four"></td>
+						<td id= "five"></td>
+						<td id= "six"></td>
+						<td id= "seven"></td>
+						<td id= "eight"></td>
+						<td id= "nine"></td>
+						<td id= "ten"></td>
+						<td id= "eleven"></td>
+						<td id= "twelve"></td>
+						<td id= "thirteen"></td>
+						<td id= "fourteen"></td>
+						<td id= "fifteen"></td>
+						<td id= "sixteen"></td>
+						<td id= "seventeen"></td>
+						<td id= "eighteen"></td>
+						<td id= "nineteen"></td>
+					</tr>
+
+					<tr><!--row 7 -->
+						<td id= "one"></td>
+						<td id= "two"></td>
+						<td id= "three"></td>
+						<td id= "four"></td>
+						<td id= "five"></td>
+						<td id= "six"></td>
+						<td id= "seven"></td>
+						<td id= "eight"></td>
+						<td id= "nine"></td>
+						<td id= "ten"></td>
+						<td id= "eleven"></td>
+						<td id= "twelve"></td>
+						<td id= "thirteen"></td>
+						<td id= "fourteen"></td>
+						<td id= "fifteen"></td>
+						<td id= "sixteen"></td>
+						<td id= "seventeen"></td>
+						<td id= "eighteen"></td>
+						<td id= "nineteen"></td>
+					</tr>
+
+					<tr><!--row 8 -->
+						<td id= "one"></td>
+						<td id= "two"></td>
+						<td id= "three"></td>
+						<td id= "four"></td>
+						<td id= "five"></td>
+						<td id= "six"></td>
+						<td id= "seven"></td>
+						<td id= "eight"></td>
+						<td id= "nine"></td>
+						<td id= "ten"></td>
+						<td id= "eleven"></td>
+						<td id= "twelve"></td>
+						<td id= "thirteen"></td>
+						<td id= "fourteen"></td>
+						<td id= "fifteen"></td>
+						<td id= "sixteen"></td>
+						<td id= "seventeen"></td>
+						<td id= "eighteen"></td>
+						<td id= "nineteen"></td>
+					</tr>
+
+					<tr><!--row 9 -->
+						<td id= "one"></td>
+						<td id= "two"></td>
+						<td id= "three"></td>
+						<td id= "four"></td>
+						<td id= "five"></td>
+						<td id= "six"></td>
+						<td id= "seven"></td>
+						<td id= "eight"></td>
+						<td id= "nine"></td>
+						<td id= "ten"></td>
+						<td id= "eleven"></td>
+						<td id= "twelve"></td>
+						<td id= "thirteen"></td>
+						<td id= "fourteen"></td>
+						<td id= "fifteen"></td>
+						<td id= "sixteen"></td>
+						<td id= "seventeen"></td>
+						<td id= "eighteen"></td>
+						<td id= "nineteen"></td>
+					</tr>
+
+					<tr><!--row 10 -->
+						<td id= "one"></td>
+						<td id= "two"></td>
+						<td id= "three"></td>
+						<td id= "four"></td>
+						<td id= "five"></td>
+						<td id= "six"></td>
+						<td id= "seven"></td>
+						<td id= "eight"></td>
+						<td id= "nine"></td>
+						<td id= "ten"></td>
+						<td id= "eleven"></td>
+						<td id= "twelve"></td>
+						<td id= "thirteen"></td>
+						<td id= "fourteen"></td>
+						<td id= "fifteen"></td>
+						<td id= "sixteen"></td>
+						<td id= "seventeen"></td>
+						<td id= "eighteen"></td>
+						<td id= "nineteen"></td>
+					</tr>
+
+					<tr><!--row 11 -->
+						<td id= "one"></td>
+						<td id= "two"></td>
+						<td id= "three"></td>
+						<td id= "four"></td>
+						<td id= "five"></td>
+						<td id= "six"></td>
+						<td id= "seven"></td>
+						<td id= "eight"></td>
+						<td id= "nine"></td>
+						<td id= "ten"></td>
+						<td id= "eleven"></td>
+						<td id= "twelve"></td>
+						<td id= "thirteen"></td>
+						<td id= "fourteen"></td>
+						<td id= "fifteen"></td>
+						<td id= "sixteen"></td>
+						<td id= "seventeen"></td>
+						<td id= "eighteen"></td>
+						<td id= "nineteen"></td>
+					</tr>
+
+					<tr><!--row 12 -->
+						<td id= "one"></td>
+						<td id= "two"></td>
+						<td id= "three"></td>
+						<td id= "four"></td>
+						<td id= "five"></td>
+						<td id= "six"></td>
+						<td id= "seven"></td>
+						<td id= "eight"></td>
+						<td id= "nine"></td>
+						<td id= "ten"></td>
+						<td id= "eleven"></td>
+						<td id= "twelve"></td>
+						<td id= "thirteen"></td>
+						<td id= "fourteen"></td>
+						<td id= "fifteen"></td>
+						<td id= "sixteen"></td>
+						<td id= "seventeen"></td>
+						<td id= "eighteen"></td>
+						<td id= "nineteen"></td>
+					</tr>
+
+					<tr><!--row 13 -->
+						<td id= "one"></td>
+						<td id= "two"></td>
+						<td id= "three"></td>
+						<td id= "four"></td>
+						<td id= "five"></td>
+						<td id= "six"></td>
+						<td id= "seven"></td>
+						<td id= "eight"></td>
+						<td id= "nine"></td>
+						<td id= "ten"></td>
+						<td id= "eleven"></td>
+						<td id= "twelve"></td>
+						<td id= "thirteen"></td>
+						<td id= "fourteen"></td>
+						<td id= "fifteen"></td>
+						<td id= "sixteen"></td>
+						<td id= "seventeen"></td>
+						<td id= "eighteen"></td>
+						<td id= "nineteen"></td>
+					</tr>
+
+					<tr><!--row 14 -->
+						<td id= "one"></td>
+						<td id= "two"></td>
+						<td id= "three"></td>
+						<td id= "four"></td>
+						<td id= "five"></td>
+						<td id= "six"></td>
+						<td id= "seven"></td>
+						<td id= "eight"></td>
+						<td id= "nine"></td>
+						<td id= "ten"></td>
+						<td id= "eleven"></td>
+						<td id= "twelve"></td>
+						<td id= "thirteen"></td>
+						<td id= "fourteen"></td>
+						<td id= "fifteen"></td>
+						<td id= "sixteen"></td>
+						<td id= "seventeen"></td>
+						<td id= "eighteen"></td>
+						<td id= "nineteen"></td>
+					</tr>
+
+					<tr><!--row 15 -->
+						<td id= "one"></td>
+						<td id= "two"></td>
+						<td id= "three"></td>
+						<td id= "four"></td>
+						<td id= "five"></td>
+						<td id= "six"></td>
+						<td id= "seven"></td>
+						<td id= "eight"></td>
+						<td id= "nine"></td>
+						<td id= "ten"></td>
+						<td id= "eleven"></td>
+						<td id= "twelve"></td>
+						<td id= "thirteen"></td>
+						<td id= "fourteen"></td>
+						<td id= "fifteen"></td>
+						<td id= "sixteen"></td>
+						<td id= "seventeen"></td>
+						<td id= "eighteen"></td>
+						<td id= "nineteen"></td>
+					</tr>
+				</tr>
+			</table>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="container">
+				<p>@ <a href="../../scissorsnchopstix/index.html">scissorsNchopstix 2016</a></p>
+			</div>
+		</div>
+
+<!-- Adding JavaScript -->
+		<script src= "archive/learning.js"></script>
+	</body>
+<html>
